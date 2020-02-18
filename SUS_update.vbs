@@ -6,7 +6,7 @@
 ' SUS_update.vbs 
 ' Developed by Mark Colatosti
 ' Script elements and functions taken from other sources, prodominately Microsoft
-' Email function taken from a party on the Internet that has now been lost.
+' Email function taken from a party on the Internet, source reference has been lost.
 '   Creates a Polling Update solution where servers that have this script located
 '   in their: 
 '   *  c:\windows directory
