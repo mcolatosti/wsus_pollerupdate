@@ -10,4 +10,4 @@ Servername,mm/dd/yyyy hh:mm:ss
 The servers with the script and task scheduled will poll this file and within 15 minutes or less of the date and time specified will kick off the process of installing windows updates, restarting the server if required.  This process is then repeated within 15 minutes if updates are still required after reboot.
 A workstation version of the script that includes delayed automated reboot as well as end user notifications via native windows balloon tips notification has been posted.  The server script assumes any automated reboots should occur immediately and without any end user notification.
 This is a complete product but could be polished a bit more to get rid of some useless code and build in some additional safeguards against administrators doing potentially stupid things like scheduling updates during business hours.  Take a look at the visio flow chart of the logic of how this would work.
-![SUS Poller Logic Flow](./Windows Update Automation - Logic Flow.png)
+![SUS Poller Logic Flow](./AutomationLogicFlow.png)
