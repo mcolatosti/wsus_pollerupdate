@@ -2,7 +2,7 @@
 A polling task that centralizes and automates scheduled installation of windows updates via an existing WSUS server and a custom windows task installed on all workstations or servers.
 
 A reasonably robust custom solution has been devised that may facilitate applying Windows updates with less effort and improved consistency and efficiency and quicker reporting.  The solution requires the “installation” of a VBScript and a scheduled Windows Task: “SUS Poller” for every system that needs to have windows updates automated.  Solution does not require any service accounts nor additional firewall rules and leverages existing WSUS infrastructure you have in place.  Once installed a configuration file managed by an administrator, located on a web server and published read-only (can be the WSUS Server) dictates which systems should install updates and at what approximate date and time this should occur.
-##Installation:
+## Installation:
 An individual just copies the two files: SUS_update_installer.Cmd and SUS_update.vbs to a temporary location on the server to be managed.  Then rights clicks the SUS_Update_installer.cmd and executes as an administrator.  This copies the VBScript to the c:\windows directory and creates the “SUS Poller” scheduled task which runs every 15 minutes.  This can easily be performed via GPO, startup scripts or other deployment tools in place.
 Finally, the administrator modifies a TXT file named machines.txt located on the WSUS server (or other globally accessible web server) with information concerning servers and the date/times (local to the time of individual servers) to install updates.  This is a simple file with one line for each server in the format:
 Servername,mm/dd/yyyy hh:mm:ss  
