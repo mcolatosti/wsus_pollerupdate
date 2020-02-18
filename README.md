@@ -12,6 +12,7 @@ A workstation version of the script that includes delayed automated reboot as we
 ## Configuration:
 Configuration of the Poller which includes email notifications, whether to restart systems, machines.txt control file location, etc. is via performed via the modification of script variables located in a clearly documented section of the script.
 
+## Other Notes:
 This is a complete product but could be polished a bit more to get rid of some useless code and build in some additional safeguards against administrators doing potentially stupid things like scheduling updates during business hours.  Take a look at the visio flow chart of the logic of how this would work.
 
 ![SUS Poller Logic Flow](./AutomationLogicFlow.png)
